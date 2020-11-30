@@ -12,7 +12,7 @@ public class LoginPage {
 		this.driver=driver;
 	}
 	
-	
+	//Find all Locators
 	@FindBy(id="user_login") WebElement username;
 	@FindBy(id="user_pass") WebElement password;
 	@FindBy(xpath="//input[@name='wp-submit']") WebElement LoginButton;
