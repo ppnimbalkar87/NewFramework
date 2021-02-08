@@ -26,7 +26,17 @@ public class ExcelDataProvider
 	public String readExcelData(String SheetName,int rowNo,int colNo) 
 	{
 		return wb.getSheet(SheetName).getRow(rowNo).getCell(colNo).getStringCellValue();
-//		data[0][1]=wb.getSheetAt(0).getRow(0).getCell(1).getStringCellValue();
 	}
+	
+	public int getTotalRows(String SheetName)
+	{
+		return wb.getSheet(SheetName).getLastRowNum();
+	}
+	public int getTotalColumns(String SheetName)
+	{
+		return wb.getSheet(SheetName).getRow(0).getLastCellNum();
+	}
+	
+	
 
 }

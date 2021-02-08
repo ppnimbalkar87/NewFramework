@@ -13,9 +13,11 @@ public class LoginPage {
 	}
 	
 	//Find all Locators
-	@FindBy(id="user_login") WebElement username;
-	@FindBy(id="user_pass") WebElement password;
-	@FindBy(xpath="//input[@name='wp-submit']") WebElement LoginButton;
+	@FindBy(xpath="//input[@name='uid']") WebElement username;
+	@FindBy(xpath="//input[@name='password']") WebElement password;
+	@FindBy(xpath="//input[@name='btnLogin']") WebElement LoginButton;
+	@FindBy(xpath="//input[@name='btnReset']") WebElement ResetButton;
+	
 	
 	
 	public void loginToApp(String AppUsername,String AppPassword)
